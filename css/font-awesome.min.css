@@ -6,3 +6,6 @@
  .fa-ok:before {
  	content: "\f00c";
  } 
+ .fa-smile:before {
+  content: "\f118";
+ }

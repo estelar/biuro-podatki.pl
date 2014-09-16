@@ -697,12 +697,15 @@ strong{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-.box.box-md{
-	height: 200px;
+.box.box-sm {
+	height: 220px;
 }
 
-.box.box-lg{
-	height: 407px;
+.box.box-md {
+	height: 270px;
+}
+.box.box-lg {
+	height: 447px;
 }
 
 .pull-up{
@@ -770,6 +773,15 @@ strong{
 	top: 0px;
 	left: 0px;
 	z-index: 2;
+}
+
+.box .box-content > h2:first-child {
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+
+.box .box-content img {
+	border: 1px solid #808080;
 }
 
 .box .box-content.padd-zero{
@@ -3372,11 +3384,12 @@ div.ppt {
 .grid  .grid-entry .entry-info{
 	padding: 15px 10px;
 	color: #fff;
+	overflow: hidden;
 }
 
 .grid  .grid-entry .entry-info h2{
 	margin: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	font-size: 20px;
 	color: #fff;
 }
