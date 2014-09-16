@@ -775,7 +775,7 @@ strong{
 	z-index: 2;
 }
 
-.box .box-content > h2:first-child {
+.box .box-content h2:first-child {
 	margin-bottom: 15px;
 	margin-top: 0;
 }
