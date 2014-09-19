@@ -97,7 +97,7 @@ hr{
 }
 
 .yellow{
-	color: #ffa800 !important;
+	color: #ffb800 !important;
 }
 
 /* Backgrounds */
@@ -143,7 +143,7 @@ hr{
 }
 
 .br-yellow{
-	background: #ffa800 !important;
+	background: #ffb800 !important;
 }
 
 /* Progress Bar Color */
@@ -359,9 +359,6 @@ strong{
 	margin-right: 3px;
 }
 
-.header .header-navigation {
-	padding-top: 20px;
-}
 
 .header .logo{
 	margin-top: 35px;
@@ -697,15 +694,12 @@ strong{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-.box.box-sm {
-	height: 220px;
+.box.box-md{
+	height: 200px;
 }
 
-.box.box-md {
-	height: 270px;
-}
-.box.box-lg {
-	height: 447px;
+.box.box-lg{
+	height: 407px;
 }
 
 .pull-up{
@@ -773,11 +767,6 @@ strong{
 	top: 0px;
 	left: 0px;
 	z-index: 2;
-}
-
-.box .box-content h2:first-child {
-	margin-bottom: 15px;
-	margin-top: 0;
 }
 
 .box .box-content.padd-zero{
@@ -3380,12 +3369,11 @@ div.ppt {
 .grid  .grid-entry .entry-info{
 	padding: 15px 10px;
 	color: #fff;
-	overflow: hidden;
 }
 
 .grid  .grid-entry .entry-info h2{
 	margin: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	font-size: 20px;
 	color: #fff;
 }
@@ -3434,8 +3422,8 @@ div.ppt {
 
 .footer{
 	margin-top: 40px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
@@ -3615,6 +3603,9 @@ div.ppt {
 }
 
 .footer .footer-copyright{
+	margin-top: 20px;
+	border-top: 1px solid #2a2a2a;
+	padding-top: 35px;
 	text-align: center;
 }
 
@@ -4117,112 +4108,4 @@ div.ppt {
 	.footer .footer-widget{
 		margin-bottom: 30px;
 	}
-}
-
-
-/* estelar */
-
-p + p {
-	margin-top: 10px;
-}
-
-p.hasIcon {
-	padding-left: 25px;
-	position: relative;
-}
-p.hasIcon i.fa {
-	font-size: 18px;
-	position: absolute;
-	left: 0;
-	margin-top: 3px;
-}
-
-.box {
-	box-shadow: none;
-}
-.box.box-md {
-	height: 342px;
-}
-.box-hover-black {
-	background-color: rgba(0, 0, 0, .55);
-}
-.box .box-content {
-	z-index: 1;
-}
-.box .box-content.box-navi {
-	cursor: pointer;
-}
-.box .box-content.box-gallery {
-	cursor: default;
-}
-.box .box-content.box-team img.box-team-img {
-	height: auto;
-}
-.box .box-content h2 {
-	font-size: 20px;
-}
-.box .box-content p {
-	font-size: 13px;
-}
-.box .box-content .img-details h3 {
-	border: none;
-}
-
-.grid .item-sm { 
-	width: 13.33%;
-	width: 16.66%;
-}
-.grid .item-md { 
-	width: 16.66%;
-}
-.grid .item-lg { 
-	width: 20%;
-	width: 16.66%;
-}
-.grid .item .box {
-	margin: 0;
-}
-.grid .item .grid-entry {
-	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1) inset;	
-}
-.grid .item .grid-entry {
-	overflow: hidden;
-}
-.grid .item-img .grid-entry {
-	padding: 0;	
-}
-.grid .item-sm .grid-entry,
-.grid .item-lg .grid-entry {
-	height: 220px;
-}
-.grid .item-md .grid-entry {
-	height: 350px;
-}
-.grid .item .grid-entry .entry-info {
-	padding: 20px;
-}
-.grid .item .grid-entry .grid-img .grid-img-hover {
-	padding: 5px 10px;
-}
-/* .grid .item .grid-entry .grid-img:hover i.icon-left { */
-/* 	margin-right: -25px; */
-/* } */
-
-.grid-img-hover {
-	font-size: 22px;
-	text-align: center;
-}
-.grid-img-hover small {
-	font-size: 13px;
-}
-
-.box .view-button {
-	position: static;
-	right: auto;
-	bottom: auto;
-	margin-top: 10px;
-}
-.box .view-button .btn {
-	font-size: .7em;
-	padding: 4px 8px;
 }
