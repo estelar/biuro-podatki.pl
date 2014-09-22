@@ -4138,7 +4138,7 @@ p.hasIcon i.fa {
 }
 
 .box {
-	box-shadow: none;
+/* 	box-shadow: none; */
 }
 .box.box-md {
 	height: 342px;
@@ -4159,7 +4159,7 @@ p.hasIcon i.fa {
 	height: auto;
 }
 .box .box-content h2 {
-	font-size: 20px;
+/* 	font-size: 20px; */
 }
 .box .box-content p {
 	font-size: 13px;
@@ -4226,3 +4226,7 @@ p.hasIcon i.fa {
 	font-size: .7em;
 	padding: 4px 8px;
 }
+
+.box:hover .box-gallery img.box-gallery-img {
+	transform: scale(2) translateY(25%);
+} 
