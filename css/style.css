@@ -4230,3 +4230,52 @@ p.hasIcon i.fa {
 .box:hover .box-gallery img.box-gallery-img {
 	transform: scale(2) translateY(25%);
 } 
+
+.box-img .box-content.box-gallery {
+	cursor: pointer;
+}
+
+.padd-horizontal {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.padd-left {
+	padding-left: 40px;
+}
+
+@media (max-width: 991px) {
+	.padd-horizontal {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.padd-left {
+		padding-left: 0;
+	}
+}
+
+.inner-page .contactus .contact-form iframe {
+	height: 298px;
+}
+
+#gmap_canvas {
+	color: #000;
+}
+
+.newsletter-content {
+	margin-top: 30px;
+}
+
+.newsletter-content table {
+	margin-top: 20px;
+}
+.newsletter-content table td {
+	padding-bottom: 4px;
+}
+.newsletter-content table tr + tr td {
+	border-top: 1px solid #2a2a2a;
+	paddind-top: 3px;
+	vertical-align: top;
+}
+.newsletter-content table td:first-child {
+	padding-right: 10px;
+}
