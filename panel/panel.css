@@ -1,3 +1,233 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300";
+
 body {
+	background: #222;
+	color: #fff;
+	font-size: 13px;
+	font-family: ​'Open Sans', arial;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+body img {
+	margin-bottom: 0;
+	margin-top: 0;
+	vertical-align: middle;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#head_right > div {
+	text-align: right;
+}
+#head_right button {
+	margin-left: 20px;
+}
+
+#main_div {
+	background: #222;
+	width: 95%;
+}
+#main_div * {
+	font-family: inherit;
+	color: inherit;
+}
+#main_div button {
+  background-color: #5bc0de;
+  color: #fff;
+  border: 1px solid #46b8da;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.42857;
+  padding: 3px 6px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#main_div select {
+	color: #000;
+	vertical-align: middle;
+}
+#main_div .sL,
+#main_div .sR {
+	font-size: 13px;
+}
+
+#col1 {
+	margin-right: 0;
+}
+
+.menuMain > div {
+	border-bottom: none;
+	font-size: 13px;
+	font-weight: normal;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.menuMain > div:nth-child(2),
+.menuMain > div:nth-child(4),
+.menuMain > div:nth-child(7),
+.menuMain > div:nth-child(11),
+.menuMain > div:nth-child(14),
+.menuMain > div:nth-child(17),
+.menuMain > div:nth-child(21) {
+	border-bottom: 0;
+	border-radius: 0 0 6px 6px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.menuMain > div:nth-child(1),
+.menuMain > div:nth-child(3),
+.menuMain > div:nth-child(5),
+.menuMain > div:nth-child(8),
+.menuMain > div:nth-child(12),
+.menuMain > div:nth-child(15),
+.menuMain > div:nth-child(18) {
+	border-radius: 6px 6px 0 0;
+	font-size: 16px !important; /**/
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.menuMain > div:nth-child(1),
+.menuMain > div:nth-child(2) {
+	background: #ed450c;
+}
+.menuMain > div:nth-child(3),
+.menuMain > div:nth-child(4) {
+	background: #702583;
+}
+.menuMain > div:nth-child(5),
+.menuMain > div:nth-child(6),
+.menuMain > div:nth-child(7) {
+	background: #fb226f;
+}
+.menuMain > div:nth-child(8),
+.menuMain > div:nth-child(9),
+.menuMain > div:nth-child(10),
+.menuMain > div:nth-child(11) {
+	background: #14b9e8;
+}
+.menuMain > div:nth-child(12),
+.menuMain > div:nth-child(13),
+.menuMain > div:nth-child(14) {
+	background: #e63131;
+}
+.menuMain > div:nth-child(15),
+.menuMain > div:nth-child(16),
+.menuMain > div:nth-child(17) {
+	background: #ffa800;
+}
+.menuMain > div:nth-child(18),
+.menuMain > div:nth-child(19),
+.menuMain > div:nth-child(20),
+.menuMain > div:nth-child(21) {
+	background: #0275d7;
+}
+.menuMain div.menuSele {
 	background: #000;
+	padding-top: 5px;
+}
+
+#klieKwad {
+	margin-top: 4px;
+	width: auto !important; /*inline*/
+}
+#klieKwad .tabGreA,
+#klieKwad .tabGreB {
+	background: #6fae26;
+	border-style: solid;
+	border-color: #649c22;
+	color: #fff;
+	font-weight: normal;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: auto;
+}
+#klieKwad .tabGreA {
+	border-radius: 6px 6px 0 0;
+	border-width: 4px 4px 0 4px;
+	font-size: 20px;
+	padding-top: 10px;
+}
+#klieKwad .tabGreB {
+	border-radius: 0 0 6px 6px;
+	border-width: 0 4px 4px;
+	font-size: inherit;
+	padding-bottom: 10px;
+}
+#klieKwad table {
+	width: 100%;
+}
+#klieKwad table td:first-child {
+	padding-left: 0;
+}
+#klieKwad table td:last-child {
+	padding-right: 0;
+}
+#col2 {
+	width: 88%;
+}
+#col2 > div {
+	margin-left: 20px;
+}
+
+.tab2 {
+	background: none;
+	border: none;
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	padding: 0;
+}
+.tab2 .butGif {
+	background: url('https://panel.biuro-podatki.pl/gfx/pdf.png');
+	display: inline-block;
+	height: 16px;
+	margin-right: 5px;
+	vertical-align: middle;
+	width: 16px;
+}
+.tab2 .butGif img {
+	display: none;
+}
+.tab21 {
+	border: 0;
+	font-size: 13px;
+	padding: 0;
+}
+.tab21 > div[style] {
+	font-size: 13px !important; /*inline*/
+}
+.tab21 .sL {
+	margin-bottom: 5px;
+}
+
+.TGC_tabela td {
+	padding: 2px 4px;
+}
+.TGC_bout {
+	background: none;
+	padding: 2px 4px;
+}
+.TGC_bove {
+	background: #666;
+}
+.TGC_thL,
+.TGC_thR {
+	background: #444;
+}
+
+#main_div. .ALC_1 {
+	color: #e63131;
+	font-size: 15px;
+	font-style: italic;
+	font-weight: normal;
+	margin: 10px 0;
 }
