@@ -16,7 +16,7 @@
 	<script src="panel_pliki/cale.js" language="JavaScript" type="text/javascript"></script>
 	<script src="panel_pliki/chkDate.js" language="JavaScript" type="text/javascript"></script>
 	<script type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="panel.css" />
+	<link rel="stylesheet" type="text/css" href="customization-1.0.css" />
 	<title>Panel Klienta Biura Rachunkowego Natalia Gorczyca</title>
 </head>
 <body style="cursor: default;">
@@ -171,6 +171,19 @@
 					<span
 						class="butGif"><img src="panel_pliki/pdf.png"></span>
 					Rozliczenie właściciela - 2010
+				</div>
+				<div class="tab21">
+					<table>
+						<tbody>
+							<tr>
+								<td width="30" class="rokWybr">2010</td>
+								<td width="20" class="miesAkty"
+									onclick="axGet(&quot;clas/KsieClass.php?a=ksiePoka&amp;rok=2010&amp;mies=1&quot;,&quot;cont&quot;);">1</td>
+								<td width="20" class="miesWybr">2</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="ALC_1">Brak danych dla okresu 2/2010</div>
 				</div>
 				<div class="tab21">
 					<div class="sL">
@@ -328,6 +341,163 @@
 										</tbody>
 									</table>
 								</div>
+							</div>
+						</div>
+					</div>
+
+					<br /><br />
+					<div style="">
+						<div>
+							<div class="TGC_tabela">
+								<table>
+									<tbody>
+										<tr>
+											<td colspan="3" class="TGC_thC"></td>
+											<td colspan="2" class="TGC_thC">Kontrahent</td>
+											<td colspan="1" class="TGC_thC"></td>
+											<td colspan="3" class="TGC_thC">Przychód</td>
+											<td colspan="2" class="TGC_thC"></td>
+											<td colspan="3" class="TGC_thC">Wydatki (koszty)</td>
+											<td colspan="1" class="TGC_thC"></td>
+										</tr>
+										<tr>
+											<td width="26" class="TGC_thL"><div>
+													Lp<br>[1]
+												</div></td>
+											<td width="12" class="TGC_thL"><div>
+													Dz<br>M<br>[2]
+												</div></td>
+											<td width="121" class="TGC_thL"><div>
+													Nr dow.<br>księ. [3]
+												</div></td>
+											<td width="121" class="TGC_thL"><div>
+													Imię i nazwisko<br>(firma) [4]
+												</div></td>
+											<td width="121" class="TGC_thL"><div>Adres [5]</div></td>
+											<td width="121" class="TGC_thL"><div>
+													Opis zdarze.<br>gospo. [6]
+												</div></td>
+											<td width="57" class="TGC_thL"><div>
+													wart.<br>sprzed.<br>towa.<br>i usł. [7]
+												</div></td>
+											<td width="57" class="TGC_thL"><div>
+													pozo.<br>przych. [8]
+												</div></td>
+											<td width="57" class="TGC_thL"><div>
+													razem<br>przych.<br>(7+8) [9]
+												</div></td>
+											<td width="57" class="TGC_thL"><div>
+													Zakup<br>towar.<br>handlo.<br>[10]
+												</div></td>
+											<td width="57" class="TGC_thL"><div>
+													Kosz.<br>ubocz.<br>zakupu<br>[11]
+												</div></td>
+											<td width="57" class="TGC_thL"><div>
+													wynagro.<br>w gotów.<br>i natu. [12]
+												</div></td>
+											<td width="57" class="TGC_thL"><div>
+													pozostałe<br>[13]
+												</div></td>
+											<td width="57" class="TGC_thL"><div>
+													razem<br>wydatki<br>(12 + 13) [14]
+												</div></td>
+											<td width="50" class="TGC_thL"><div>uwagi [16]</div></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div style="overflow: auto; height: 500px;">
+							<div class="TGC_tabela">
+								<table>
+									<tbody>
+										<tr onmouseout="this.className='TGC_bout'"
+											onmouseover="this.className='TGC_bove'" class="TGC_bout">
+											<td width="26" class="TGC_sC">1</td>
+											<td width="12" class="TGC_sC">1</td>
+											<td width="121" class="TGC_sL">12345</td>
+											<td width="121" class="TGC_sL">DEMO1</td>
+											<td width="121" class="TGC_sL">STARA 100/100, 70-700
+												SZCZECIN</td>
+											<td width="121" class="TGC_sL">SPRZEDAŻ</td>
+											<td width="57" class="TGC_sR">100 000.00</td>
+											<td width="57"></td>
+											<td width="57" class="TGC_sR">100 000.00</td>
+											<td width="57"></td>
+											<td width="57"></td>
+											<td width="57"></td>
+											<td width="57"></td>
+											<td width="57"></td>
+											<td width="50"></td>
+										</tr>
+										<tr onmouseout="this.className='TGC_bout'"
+											onmouseover="this.className='TGC_bove'" class="TGC_bout">
+											<td width="26" class="TGC_sC">2</td>
+											<td width="12" class="TGC_sC">1</td>
+											<td width="121" class="TGC_sL">54321</td>
+											<td width="121" class="TGC_sL">DEMO 2</td>
+											<td width="121" class="TGC_sL">BRZYDKA 100/100, 70-700
+												SZCZECIN</td>
+											<td width="121" class="TGC_sL">POZOSTAŁE WYDATKI</td>
+											<td width="57"></td>
+											<td width="57"></td>
+											<td width="57"></td>
+											<td width="57"></td>
+											<td width="57"></td>
+											<td width="57"></td>
+											<td width="57" class="TGC_sR">50 000.00</td>
+											<td width="57" class="TGC_sR">50 000.00</td>
+											<td width="50"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div>
+							<div class="TGC_tabela">
+								<table>
+									<tbody>
+										<tr>
+											<td width="26" class="TGC_thR"></td>
+											<td width="12" class="TGC_thR"></td>
+											<td width="121" class="TGC_thR"></td>
+											<td width="121" class="TGC_thR"></td>
+											<td width="121" class="TGC_thR"></td>
+											<td width="121" class="TGC_thR"></td>
+											<td width="57" class="TGC_thR">100 000.00</td>
+											<td width="57" class="TGC_thR"></td>
+											<td width="57" class="TGC_thR">100 000.00</td>
+											<td width="57" class="TGC_thR"></td>
+											<td width="57" class="TGC_thR"></td>
+											<td width="57" class="TGC_thR"></td>
+											<td width="57" class="TGC_thR">50 000.00</td>
+											<td width="57" class="TGC_thR">50 000.00</td>
+											<td width="50" class="TGC_thR"></td>
+										</tr>
+										<tr>
+											<td class="TGC_thR" colspan="6">Poprzedni miesiąc</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">0.00</td>
+										</tr>
+										<tr>
+											<td class="TGC_thR" colspan="6">Razem</td>
+											<td class="TGC_thR">100 000.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">100 000.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">0.00</td>
+											<td class="TGC_thR">50 000.00</td>
+											<td class="TGC_thR">50 000.00</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
