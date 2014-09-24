@@ -27,16 +27,6 @@ table {
 	border-collapse: collapse;
 }
 
-#head {
-	margin: 0 0 20px 0;
-}
-#head_right > div {
-	text-align: right;
-}
-#head_right button {
-	margin-left: 20px;
-}
-
 #main_div {
 	background: #222;
 	overflow: hidden;
@@ -55,7 +45,6 @@ table {
   margin: 0;
   padding: 3px 6px;
   text-align: center;
-  vertical-align: middle;
   white-space: nowrap;
 }
 #main_div select {
@@ -70,6 +59,17 @@ table {
 #main_div .sR {
 	font-size: 13px;
 }
+
+#head {
+	margin: 0 0 20px 0;
+}
+#head_right > div {
+	text-align: right;
+}
+#head_right button {
+	margin-left: 15px;
+}
+
 
 #col1 {
 	margin-right: 0;
