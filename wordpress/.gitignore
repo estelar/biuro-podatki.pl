@@ -1,0 +1,6 @@
+/wp-admin
+/wp-includes
+/*.htaccess
+/*.php
+/*.txt
+/*.html
