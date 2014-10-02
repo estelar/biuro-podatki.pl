@@ -1,11 +1,16 @@
 <?php
-/**
- * Template Name: Box-Navigation
- */
+	global $page;
+	$color = ensureColor($page->ID);
+	$sizeStyle = ensureSizeStyle($page->ID);
+	$url = ensureUrl($page->ID);
 ?>
-
-<?php get_header(); ?>
-
-
-
-<?php get_footer(); ?>
+<div class="<?= $sizeStyle ?>">
+	<div class="box box-navi box-md br-<?= $color ?> animated animation fadeInUp">
+		<a href="<?= $url ?>">
+			<span class="box-content navigation slide-up">
+				<span class="title"><?= $page->post_title ?></span>
+				<span class="text"><?= $page->post_content ?></span>
+			</span>
+		</a>
+	</div>
+</div>

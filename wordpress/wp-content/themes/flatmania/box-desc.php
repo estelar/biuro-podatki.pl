@@ -1,11 +1,14 @@
 <?php
-/**
- * Template Name: Box-Description
- */
+	global $page;
+	$sizeStyle = ensureSizeStyle($page->ID);
 ?>
-
-<?php get_header(); ?>
-
-
-
-<?php get_footer(); ?>
+<div class="<?= $sizeStyle ?>">
+	<div class="box box-desc box-md animated animation">
+		<div class="box-content box-default">
+			<h2><?= $page->post_title ?></h2>
+			<p>
+				<?= $page->post_content ?>
+			</p>
+		</div>
+	</div>
+</div>
