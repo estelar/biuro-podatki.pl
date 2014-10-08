@@ -44,35 +44,43 @@ p.hasIcon i.fa {
 	width: 20%;
 }
 
+.box-wrapper .boxGroup > div {
+	float: none;
+	width: auto;
+}
+
 .row > div {
 	padding-left: 5px;
 	padding-right: 5px;
 }
 
 .box {
-	cursor: pointer;
 	height: auto;  
 }
-.box-img {
-	cursor: default;
+.box.hasUrl {
+	cursor: pointer;
 }
-.box-desc {
+.box-image {
+/* 	cursor: default; */
+}
+.box-description {
 	box-shadow: none;
-	cursor: default;
+/* 	cursor: default; */
 }
-.box-desc .box-content {
+.box-description .box-content {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-.box-navi {
+.box-standard {
 	transition-duration: .5s;
 }
-.box-navi:hover {
+.box-standardl:hover {
 	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.4) inset;
 }
 .box .box-content h2 {
 	font-size: 30px;
 	font-weight: bold;
+	margin-bottom: 0;
 	text-align: center;
 /* 	word-break: break-all; */
 }

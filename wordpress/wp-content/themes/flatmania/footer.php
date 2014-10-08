@@ -48,7 +48,7 @@
 					find('> a').addClass('dropdown-toggle').attr('data-toggle', 'dropdown').attr('href', '#').
 					find('.link-title').append(' <b class="fa fa-angle-down"></b>');
 
-				$('.box-img .box-content img').addClass('img-responsive box-gallery-img');
+				$('.box-image .box-content img').addClass('img-responsive box-gallery-img');
 			});
 		</script>
 		<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/bootstrap.min.js"></script><!-- Bootstrap JS -->

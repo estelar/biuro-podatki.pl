@@ -13,7 +13,7 @@
 <?php
 	$pages = get_pages(array(
 		'parent' => '4',
-		'sort_column' => 'ID'
+		'sort_column' => 'menu_order'
 	));
 
 	foreach ($pages as $page) {
