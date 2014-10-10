@@ -24,16 +24,19 @@
 			<div class="header">
 				<div class="header-navigation">
 					<div class="container">
+						<div class="languages">
+						<?php get_template_part('menu', 'languages') ?>
+						</div>
 						<div class="row">
-							<div class="col-md-5">
+							<div class="col-md-6">
 								<div class="logo">
 									<h1>
-										<a href="index.orig.html" target="_blank"><small>Kancelaria Doradcy Podatkowego</small></a><br />
-										<a href="index.kazik.html" target="_blank"><strong>Natalia Gorczyca</strong></a>
+										<a href="index.orig.html" target="_blank"><small><?php _e('Tax Advisor\'s Office', 'flatmania'); ?></small></a><br />
+										<a href="index.kazik.html" target="_blank"><strong><?php _e('Natalia Gorczyca Accounting Office', 'flatmania'); ?></strong></a>
 								  </h1>
 								</div>
 							</div>
-							<div class="col-md-7">
+							<div class="col-md-6">
 								<nav class="navbar navbar-default" role="navigation">
 									<div class="navbar-header">
 										<button type="button" class="navbar-toggle br-orange" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -44,14 +47,7 @@
 										</button>
 									</div>
 									<div class="collapse navbar-collapse" id="menu-main">
-										<ul class="nav navbar-nav navbar-right">
-											<?php wp_list_pages(array(
-													'depth' => 1,
-													'title_li' => '',
-													'link_before' => '<i class="fa link-icon"></i><span class="link-title">',
-													'link_after' => '</span>'
-												)); ?>
-										</ul>
+									<?php get_template_part('menu', 'main') ?>
 									</div>
 								</nav>
 							</div>

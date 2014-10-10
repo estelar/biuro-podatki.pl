@@ -1,12 +1,8 @@
 <?php
 	global $page;
-	$color = ensureColor($page->ID);
-	$sizeStyle = ensureSizeStyle($page->ID);
 ?>
-<div class="<?= $sizeStyle ?>">
-	<div class="box box-image box-md br-<?= $color ?> animated animation fadeInUp">
-		<div class="box-content box-gallery slide-up padd-zero">
-			<?= $page->post_content ?>
-		</div>
+<div class="box box-image box-md br-<?= $color ?> animated animation fadeInUp">
+	<div class="box-content box-gallery slide-up padd-zero">
+		<?php echo $page->post_content ?>
 	</div>
 </div>

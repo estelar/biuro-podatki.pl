@@ -9,19 +9,17 @@
 <div class="box-wrapper">
 	<div class="container">
 		<div class="row">
-
 <?php
+	$frontPageId = get_option('page_on_front');
 	$pages = get_pages(array(
-		'parent' => '4',
+		'parent' => $frontPageId,
 		'sort_column' => 'menu_order'
 	));
 
 	foreach ($pages as $page) {
-		$boxType = ensureBoxType($page->ID);
-		get_template_part('box', $boxType);
+		get_template_part('box', 'wrapper');
 	}
 ?>
-
 		</div>
 	</div>
 </div>

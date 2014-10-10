@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+
+msgid "Tax Advisor's Office"
+msgstr ""
+
+msgid "Natalia Gorczyca Accounting Office"
+msgstr ""
+
+msgid "Not Found"
+msgstr ""
+
+msgid "It looks like nothing was found at this location."
+msgstr ""
