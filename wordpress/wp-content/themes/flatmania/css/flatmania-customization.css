@@ -26,6 +26,9 @@ p + p {
 
 /* Header */
 
+.header {
+	margin-bottom: 30px;
+}
 .header .logo h1 {
 	font-size: 35px;
 }
@@ -127,6 +130,9 @@ p + p {
 	transform: scale(2) translateY(25%);
 }
 
+.box-wrapper {
+	margin-top: 0;
+}
 .box-wrapper .col-md-3 {
 	padding-left: 5px;
 	padding-right: 5px;
@@ -181,6 +187,14 @@ p + p {
 }
 .box-wrapper .box .box-content.navigation .text + .text {
 	margin-top: 10px;
+}
+
+/* Sidebar */
+
+.page-sidebar .page-title h2 {
+	font-size: 30px;
+	line-height: 35px;
+	margin: 0;
 }
 
 /* Contact page */
@@ -238,4 +252,53 @@ p + p {
 
 .inner-page .error .error-content h2 {
 	font-size: 30px;
+}
+
+/* Offer */
+
+.offer.page-mainbar {
+	padding-left: 30px;
+}
+.offer > h2 {
+	text-align: center;
+}
+.offer-content {
+	margin-top: 30px;
+}
+.offer-content .box h2 {
+	display: none;
+}
+.offer-content .box-standard .box-content {
+	text-align: center;
+}
+.offer-content .box-standard p {
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 28px;
+}
+.offer-content .box-description {
+	height: auto;
+}
+.offer-content .box-description .box-content {
+	position: static;
+	top: auto;
+	left: auto;
+	height: auto;
+	width: auto;
+}
+.offer-content .box-description .box-content h2 + p {
+	margin-top: 0;
+}
+.offer-content .box-description p {
+	font-size: 15px;
+}
+.offer-content .autoBox .box {
+	height: auto;
+}
+.offer-content .autoBox .box .box-content {
+	position: static;
+	top: auto;
+	left: auto;
+	height: auto;
+	width: auto;
 }

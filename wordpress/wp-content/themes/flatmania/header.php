@@ -31,8 +31,8 @@
 							<div class="col-md-6">
 								<div class="logo">
 									<h1>
-										<a href="index.orig.html" target="_blank"><small><?php _e('Tax Advisor\'s Office', 'flatmania'); ?></small></a><br />
-										<a href="index.kazik.html" target="_blank"><strong><?php _e('Natalia Gorczyca Accounting Office', 'flatmania'); ?></strong></a>
+										<a href="<?php echo home_url(); ?>"><small><?php _e('Tax Advisor\'s Office', 'flatmania'); ?></small></a><br />
+										<a href="<?php echo home_url(); ?>"><strong><?php _e('Natalia Gorczyca Accounting Office', 'flatmania'); ?></strong></a>
 								  </h1>
 								</div>
 							</div>

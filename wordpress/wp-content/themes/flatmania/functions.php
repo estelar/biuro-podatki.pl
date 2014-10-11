@@ -8,6 +8,14 @@
 				'size' => array('col-md-5' => '20%', 'col-md-4' => '25%', 'col-md-3' => '33%'),
 		);
 
+		public static function getChildPages($pageId, $limit = '') {
+			return get_pages(array(
+					'parent' => $pageId,
+					'sort_column' => 'menu_order',
+					'number' => $limit
+			));
+		}
+
 		public static function getPageByToken($token) {
 			$tokenArgs = array(
 					'meta_key'   => 'token',
@@ -36,12 +44,23 @@
 			return apply_filters('the_content', $content);
 		}
 
+		public static function getRandomColor() {
+			$cnt = count(Utils::$__metaMap['color']);
+			$idx = rand(1, $cnt);
+			return Utils::$__metaMap['color'][$idx-1];
+		}
+
 		public static function ensureBoxType($pageId) {
 			return Utils::__ensureValidMeta($pageId, 'box');
 		}
 
 		public static function ensureColor($pageId) {
 			return Utils::__ensureValidMeta($pageId, 'color');
+		}
+
+		public static function ensureColorRandomly($pageId) {
+			$color = Utils::getMeta($pageId, 'color');
+			return $color != null ? $color : Utils::getRandomColor();
 		}
 
 		public static function ensureSizeStyle($pageId) {

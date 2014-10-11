@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home
+ * Template Name: Strona główna
  */
 ?>
 
@@ -10,11 +10,7 @@
 	<div class="container">
 		<div class="row">
 <?php
-	$frontPageId = get_option('page_on_front');
-	$pages = get_pages(array(
-		'parent' => $frontPageId,
-		'sort_column' => 'menu_order'
-	));
+	$pages = Utils::getChildPages(get_option('page_on_front'));
 
 	foreach ($pages as $page) {
 		get_template_part('box', 'wrapper');

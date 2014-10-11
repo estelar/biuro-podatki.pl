@@ -12,11 +12,7 @@
 	<div class="contactus-content">
 		<div class="row">
 <?php
-	$items = get_pages(array(
-		'parent' => get_the_ID(),
-		'sort_column' => 'menu_order',
-		'number' => 4
-	));
+	$items = Utils::getChildPages(get_the_ID(), 4);
 	$cnt = count($items);
 
 	if ($cnt > 0) {

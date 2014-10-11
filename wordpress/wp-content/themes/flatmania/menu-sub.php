@@ -1,10 +1,7 @@
 <?php
 	global $menuItem;
 	$subItem = null;
-	$subItems = get_pages(array(
-		'parent' => $menuItem->ID,
-		'sort_column' => 'menu_order'
-	));
+	$subItems = Utils::getChildPages($menuItem->ID);
 	?>
 <ul class="dropdown-menu dropdown-sm">
 	<li>
