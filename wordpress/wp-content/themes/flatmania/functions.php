@@ -65,7 +65,8 @@
 
 		public static function ensureSizeStyle($pageId) {
 			$size = Utils::__ensureValidMeta($pageId, 'size');
-			return array_keys(Utils::$__metaMap['size'])[0];
+			$keys = array_keys(Utils::$__metaMap['size']);
+			return $keys[0];
 		}
 
 		public static function ensureUrl($pageId) {

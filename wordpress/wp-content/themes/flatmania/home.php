@@ -8,7 +8,8 @@
 
 <div class="box-wrapper">
 	<div class="container">
-		<div class="row">
+		<div class="home">
+			<div class="row">
 <?php
 	$pages = Utils::getChildPages(get_option('page_on_front'));
 
@@ -16,6 +17,7 @@
 		get_template_part('box', 'wrapper');
 	}
 ?>
+			</div>
 		</div>
 	</div>
 </div>

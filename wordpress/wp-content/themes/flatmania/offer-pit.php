@@ -11,10 +11,10 @@
 ?>
 
 <div class="row">
-	<div class="col-md-3">
+	<div class="col col-md-3">
 		<?php get_template_part('sidebar', 'offer') ?>
 	</div>
-	<div class="col-md-9">
+	<div class="col col-md-9">
 		<div class="page-mainbar offer">
 			<h2><?php the_title() ?></h2>
 			<div class="offer-content">
@@ -28,7 +28,7 @@
 						for ($i = 0; $i < count($pages); $i++) :
 							$page = $pages[$i];
 					?>
-						<div class="<?php echo $sizes[$i] ?>">
+						<div class="col <?php echo $sizes[$i]; if ($i >= 1) echo ' padd-box' ?>">
 						<?php get_template_part('box', $boxes[$i]) ?>
 						</div>
 					<?php endfor; ?>

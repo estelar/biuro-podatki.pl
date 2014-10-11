@@ -16,9 +16,9 @@
 	<?php else : ?>
 	<a href="<?php echo $url ?>">
 		<span class="box-content navigation slide-up">
-			<span class="title"><?php echo $page->post_title ?></span>
+			<span class="h2"><?php echo $page->post_title ?></span>
 			<?php if (!empty($page->post_content)) : ?>
-			<span class="text"><?php echo Utils::formatContent($page->post_content) ?></span>
+			<span class="p"><?php echo $page->post_content ?></span>
 			<?php endif; ?>
 		</span>
 	</a>

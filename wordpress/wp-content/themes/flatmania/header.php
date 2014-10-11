@@ -2,8 +2,8 @@
 <html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-		<meta name="description" content="Biuro Rachunkowe, Szczecin, Natalia Gorczyca">
-		<meta name="keywords" content="Biuro Rachunkowe, Szczecin, Natalia Gorczyca">
+		<meta name="description" content="Biuro rachunkowe Szczecin - oferujemy profesjonalną księgowość. Biuro podatkowe - doradzamy w zakresie podatków. Szczecin - podatki">
+		<meta name="keywords" content="biuro rachunkowe szczecin, księgowość szczecin, biuro podatkowe szczecin, usługi księgowe szczecin, doradca podatkowy szczecin, podatki szczecin, księgowa szczecin, abolicja podatkowa">
     <meta name="author" content="gestelar">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -28,7 +28,7 @@
 						<?php get_template_part('menu', 'languages') ?>
 						</div>
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col col-md-6">
 								<div class="logo">
 									<h1>
 										<a href="<?php echo home_url(); ?>"><small><?php _e('Tax Advisor\'s Office', 'flatmania'); ?></small></a><br />
@@ -36,7 +36,7 @@
 								  </h1>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col col-md-6">
 								<nav class="navbar navbar-default" role="navigation">
 									<div class="navbar-header">
 										<button type="button" class="navbar-toggle br-orange" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

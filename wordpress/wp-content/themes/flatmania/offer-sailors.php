@@ -11,10 +11,10 @@
 ?>
 
 <div class="row">
-	<div class="col-md-3">
+	<div class="col col-md-3">
 		<?php get_template_part('sidebar', 'offer') ?>
 	</div>
-	<div class="col-md-9">
+	<div class="col col-md-9">
 		<div class="page-mainbar offer">
 			<h2><?php the_title() ?></h2>
 			<div class="offer-content">
@@ -26,15 +26,14 @@
 
 						if ($cnt >= 0) :
 					?>
-						<div class="col-md-3 autoBox">
+						<div class="col col-md-3 autoBox">
 						<?php
 								$page = $pages[0];
 								get_template_part('box', 'image')
 						?>
 						</div>
 						<?php if ($cnt >= 1) : ?>
-						<div class="col-md-1"></div>
-						<div class="col-md-8">
+						<div class="col col-md-9 padd-left">
 							<?php
 									$page = $pages[1];
 									get_template_part('box', 'description');
@@ -43,7 +42,7 @@
 							?>
 							<div class="row">
 							<?php for ($i = 2; $i < $cnt; $i++) :?>
-								<div class="col-md-4">
+								<div class="col col-md-4 padd-box">
 									<?php
 										$page = $pages[$i];
 										get_template_part('box', 'standard');
