@@ -11,12 +11,12 @@
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/animate.min.css">
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/font-awesome.min.css">
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/flatmania.css">
-		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/flatmania-customization.css?rev=20140929">
 		<!--[if IE]>
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/settings-ie8.css">
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/ie-style.css">
 		<![endif]-->
 		<?php wp_head(); ?>
+		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/flatmania-customization.css?rev=20140929">
     <title><?php bloginfo ('name') ?><?php wp_title( '|', true, 'left' ); ?></title>
 	</head>
 	<body <?php body_class(); ?>>

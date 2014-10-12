@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Oferta - marynarze
+ * Template Name: Oferta - Zdjecie + Tekst + 3x1
  */
 ?>
 

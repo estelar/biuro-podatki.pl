@@ -1,7 +1,7 @@
 <?php
 	$page = get_post(get_the_ID());
 	$parentPage = get_post($page->post_parent);
-	$color = Utils::ensureColor($parentPage->ID);
+	$color = Utils::ensureColorRandomly($parentPage->ID);
 	$pageInParent = null;
 	$pagesInParent = Utils::getChildPages($parentPage->ID);
 ?>

@@ -5,7 +5,7 @@
 		private static $__metaMap = array(
 				'box' => array('standard', 'description', 'image', 'group'),
 				'color' => array('orange', 'purple', 'pink', 'lblue', 'red', 'yellow', 'blue', 'green'),
-				'size' => array('col-md-5' => '20%', 'col-md-4' => '25%', 'col-md-3' => '33%'),
+				'size' => array('20%' => 'col-md-2', '25%' => 'col-md-3', '33%' => 'col-md-4')
 		);
 
 		public static function getChildPages($pageId, $limit = '') {
@@ -59,14 +59,15 @@
 		}
 
 		public static function ensureColorRandomly($pageId) {
-			$color = Utils::getMeta($pageId, 'color');
+			$color = strtolower(Utils::getMeta($pageId, 'color'));
 			return $color != null ? $color : Utils::getRandomColor();
 		}
 
 		public static function ensureSizeStyle($pageId) {
-			$size = Utils::__ensureValidMeta($pageId, 'size');
+			$sizeKey = strtolower(Utils::getMeta($pageId, 'size'));
+			$sizes = Utils::$__metaMap['size'];
 			$keys = array_keys(Utils::$__metaMap['size']);
-			return $keys[0];
+			return array_key_exists($sizeKey, $sizes) ? $sizes[$sizeKey] : $sizes[$keys[0]];
 		}
 
 		public static function ensureUrl($pageId) {

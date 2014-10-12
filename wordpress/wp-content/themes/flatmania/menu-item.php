@@ -1,6 +1,6 @@
 <?php
 	global $menuItem;
-	$color = Utils::ensureColor($menuItem->ID);
+	$color = Utils::ensureColorRandomly($menuItem->ID);
 	$icon = Utils::getMeta($menuItem->ID, 'icon');
 	$submenu = Utils::getMeta($menuItem->ID, 'submenu');
 ?>

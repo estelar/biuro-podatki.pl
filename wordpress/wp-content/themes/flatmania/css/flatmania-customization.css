@@ -160,8 +160,7 @@ label[for] {
 }
 .box > a {
 	color: inherit;
-	display: inline-block;
-	width: 100%;
+	display: block;
 }
 .box .box-content h2 {
 	font-size: 30px;
@@ -189,6 +188,7 @@ label[for] {
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 1.1;
+	margin: 0;
 	text-align: center;
 }
 .box .box-content.navigation .p {
@@ -215,18 +215,15 @@ label[for] {
 .box-image:hover .box-content.box-gallery img.box-gallery-img {
 	transform: scale(2) translateY(25%);
 }
+.box-standard .box-content a {
+	color: #fff;
+}
 
 /* Homepage */
 
-.home .col-md-3 {
-	width: 33.33%;
-}
-.home.col-md-4 {
-	width: 25%;
-}
-.home .col-md-5 {
+.home .col-md-2 {
 	width: 20%;
-}
+} 
 .home .box {
 	height: auto;
 	margin-top: 10px;
@@ -250,35 +247,6 @@ label[for] {
 
 .inner-page .contactus .contact-form iframe {
 	height: 298px;
-}
-
-#gmap_canvas {
-	color: #000;
-}
-#gmap_canvas img {
-	max-width: none !important;
-	background: none !important
-}
-
-.ninja-forms-required-items {
-	display: none;
-}
-.ninja-forms-response-msg:empty {
-	display: none;
-}
-.ninja-forms-response-msg {
-	font-weight: bold;
-	margin-bottom: 1em;
-} 
-.ninja-forms-error-msg {
-	color: #e63131;
-}
-.ninja-forms-success-msg {
-	color: #6fae26;
-}
-.ninja-forms-field-error {
-	font-size: 13px;
-	color: #e63131;
 }
 
 /* Newsletter */
@@ -346,4 +314,51 @@ label[for] {
 	left: auto;
 	height: auto;
 	width: auto;
+}
+
+/* Plugins and widgets */
+
+#slb_viewer_wrap .slb_theme_slb_default .slb_data_title {
+	font-family: inherit !important;
+	font-size: 15px !important;
+}
+#slb_viewer_wrap .slb_theme_slb_default .slb_group_status {
+	font-family: inherit !important;
+	font-size: 15px !important;
+	float: right;
+}
+#slb_viewer_wrap .slb_theme_slb_default .slb_data_content {
+	margin-top: 3px;
+}
+#slb_viewer_wrap .slb_theme_slb_default .slb_data_desc {
+	display: none;
+}
+
+#gmap_canvas {
+	color: #000;
+}
+#gmap_canvas img {
+	max-width: none !important;
+	background: none !important
+}
+
+.ninja-forms-required-items {
+	display: none;
+}
+.ninja-forms-response-msg:empty {
+	display: none;
+}
+.ninja-forms-response-msg {
+	font-weight: bold;
+	margin-bottom: 1em;
+} 
+.ninja-forms-error-msg {
+	color: #e63131;
+}
+.ninja-forms-success-msg {
+	color: #6fae26;
+}
+.ninja-forms-field-error {
+	font-size: 13px;
+	color: #e63131;
 }

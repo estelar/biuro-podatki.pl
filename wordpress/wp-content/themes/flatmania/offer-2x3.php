@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Oferta - PIT
+ * Template Name: Oferta - 2x3
  */
 ?>
 
@@ -21,14 +21,13 @@
 				<div class="container">
 					<div class="row">
 					<?php
-						$pages = Utils::getChildPages(get_the_ID(), 3);
-						$boxes = array('description', 'standard', 'standard');
-						$sizes = array('col-md-12', 'col-md-6', 'col-md-6');
+						$pages = Utils::getChildPages(get_the_ID(), 6);
+						$boxes = array('image', 'standard', 'standard', 'standard', 'standard', 'image');
 
 						for ($i = 0; $i < count($pages); $i++) :
 							$page = $pages[$i];
 					?>
-						<div class="col <?php echo $sizes[$i]; if ($i >= 1) echo ' padd-box' ?>">
+						<div class="col col-md-6 padd-box">
 						<?php get_template_part('box', $boxes[$i]) ?>
 						</div>
 					<?php endfor; ?>
