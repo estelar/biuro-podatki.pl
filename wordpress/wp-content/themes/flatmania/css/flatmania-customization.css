@@ -18,11 +18,23 @@ label[for] {
 }
 
 @media (min-width: 1200px) {
+  .padd-left {
+    margin-left: 30px;
+  }
+  .padd-right {
+    margin-right: 30px;
+  }
   .padd-box > .box {
   	margin: 10px;
   }
 }
 @media (min-width: 768px) {
+  .padd-left-sm {
+    margin-left: 30px;
+  }
+  .padd-right-sm {
+    margin-right: 30px;
+  }
   .padd-box-sm > .box {
   	margin: 10px;
   }
@@ -292,25 +304,35 @@ label[for] {
 
 /* Contact page */
 
-.contactus {
+.contactus-content,
+.contact-form {
   width: 80%;
   margin: 0 auto;
 }
-.contact-form .gg {
-  margin: 0 auto;
-  width: 218px;
-}
-@media (max-width: 991px) {
-  .gmap {
-    margin-top: 30px;
-  }
-}
-@media (max-width: 991px) {
-  .contactus {
+@media (max-width: 480px) {
+  .contactus-content {
     width: auto;
     margin: 0;
   }
 }
+@media (max-width: 768px) {
+  .gmap {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-form {
+    width: auto;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .inner-page .contactus .contact-form iframe {
 	height: 298px;
 	margin-left: 0;

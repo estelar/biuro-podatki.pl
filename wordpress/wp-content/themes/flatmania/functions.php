@@ -1,11 +1,7 @@
 <?php
+	require_once(get_template_directory() . '/config.php');
 
 	class Utils {
-
-		private static $__metaMap = array(
-				'box' => array('standard', 'description', 'image', 'group'),
-				'color' => array('orange', 'purple', 'pink', 'lblue', 'red', 'yellow', 'blue', 'green')
-		);
 
 		public static function getChildPages($pageId, $limit = '') {
 			return get_pages(array(
@@ -44,9 +40,9 @@
 		}
 
 		public static function getRandomColor() {
-			$cnt = count(Utils::$__metaMap['color']);
+			$cnt = count(Config::$metas['color']);
 			$idx = rand(1, $cnt);
-			return Utils::$__metaMap['color'][$idx-1];
+			return Config::$metas['color'][$idx-1];
 		}
 
 		public static function ensureBoxType($pageId) {
@@ -72,11 +68,11 @@
 		}
 
 		private static function __ensureValidMeta($pageId, $meta) {
-			if (!array_key_exists($meta, Utils::$__metaMap)) {
+			if (!array_key_exists($meta, Config::$metas)) {
 				return;
 			}
 			$value = strtolower(Utils::getMeta($pageId, $meta));
-			return in_array($value, Utils::$__metaMap[$meta]) ? $value : Utils::$__metaMap[$meta][0];
+			return in_array($value, Config::$metas[$meta]) ? $value : Config::$metas[$meta][0];
 		}
 
 	}
