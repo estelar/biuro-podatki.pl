@@ -4,8 +4,7 @@
 
 		private static $__metaMap = array(
 				'box' => array('standard', 'description', 'image', 'group'),
-				'color' => array('orange', 'purple', 'pink', 'lblue', 'red', 'yellow', 'blue', 'green'),
-				'size' => array('20%' => 'col-md-2', '25%' => 'col-md-3', '33%' => 'col-md-4')
+				'color' => array('orange', 'purple', 'pink', 'lblue', 'red', 'yellow', 'blue', 'green')
 		);
 
 		public static function getChildPages($pageId, $limit = '') {
@@ -63,16 +62,13 @@
 			return $color != null ? $color : Utils::getRandomColor();
 		}
 
-		public static function ensureSizeStyle($pageId) {
-			$sizeKey = strtolower(Utils::getMeta($pageId, 'size'));
-			$sizes = Utils::$__metaMap['size'];
-			$keys = array_keys(Utils::$__metaMap['size']);
-			return array_key_exists($sizeKey, $sizes) ? $sizes[$sizeKey] : $sizes[$keys[0]];
-		}
-
 		public static function ensureUrl($pageId) {
 			$url = strtolower(Utils::getMeta($pageId, 'url'));
 			return $url;
+		}
+
+		public static function printBoxPlaceholder($idx) {
+			echo '<p class="boxPlaceholder">[' . ($idx + 1) . ']</p>';
 		}
 
 		private static function __ensureValidMeta($pageId, $meta) {

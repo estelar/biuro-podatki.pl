@@ -1,6 +1,5 @@
 <?php
-	global $page;
-	$sizeStyle = Utils::ensureSizeStyle($page->ID);
+	global $page, $boxStyle;
 	$subPages = Utils::getChildPages($page->ID);
 
 	foreach ($subPages as $page) {

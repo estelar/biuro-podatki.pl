@@ -1,9 +1,9 @@
 <?php
-	global $page;
+	global $page, $boxStyle;
 	$color = Utils::ensureColorRandomly($page->ID);
 	$url = Utils::ensureUrl($page->ID);
 ?>
-<div class="box box-standard box-md br-<?= $color ?> animated animation fadeInUp <?php if(!empty($url)) echo 'hasUrl' ?>">
+<div class="box box-standard br-<?= $color ?> animated animation fadeInUp <?php echo $boxStyle; if(!empty($url)) echo ' hasUrl' ?>">
 	<?php if (empty($url)) : ?>
 	<div class="box-content slide-up">
 		<h2><?php echo $page->post_title ?></h2>

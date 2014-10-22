@@ -1,21 +1,20 @@
 <?php
 /**
- * Template Name: Oferta - zwykła strona
+ * Template Name: OF zwykła strona
  */
 ?>
 
 <?php
 	get_header();
-
 	the_post();
 ?>
 
 <div class="row">
-	<div class="col col-md-3">
+	<div class="col-md-3">
 		<?php get_template_part('sidebar', 'offer') ?>
 	</div>
-	<div class="col col-md-9">
-		<div class="page-mainbar offer padd-left">
+	<div class="col-md-9">
+		<div class="page-mainbar offer">
 			<h2><?php the_title() ?></h2>
 			<div class="offer-content">
 				<?php the_content() ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Oferta - Tekst + 2x1
+ * Template Name: OF tekst, 2 pola: T|2x1
  */
 ?>
 
@@ -11,28 +11,32 @@
 ?>
 
 <div class="row">
-	<div class="col col-md-3">
+	<div class="col-md-3">
 		<?php get_template_part('sidebar', 'offer') ?>
 	</div>
-	<div class="col col-md-9">
+	<div class="col-md-9">
 		<div class="page-mainbar offer">
 			<h2><?php the_title() ?></h2>
 			<div class="offer-content">
-				<div class="container">
-					<div class="row">
-					<?php
-						$pages = Utils::getChildPages(get_the_ID(), 3);
-						$boxes = array('description', 'standard', 'standard');
-						$sizes = array('col-md-12', 'col-md-6', 'col-md-6');
+				<div class="row">
+				<?php
+					$pages = Utils::getChildPages(get_the_ID(), 3);
+					$sizes = array('col-lg-12', 'col-sm-6', 'col-sm-6');
 
-						for ($i = 0; $i < count($pages); $i++) :
+					for ($i = 0; $i < 3; $i++) :
+				?>
+					<div class="<?php echo $sizes[$i] ?> padd-box-sm">
+					<?php
+						if (!empty($pages[$i])) {
 							$page = $pages[$i];
+							$boxStyle = 'box-auto';
+							get_template_part('box', Utils::ensureBoxType($page->ID));
+						} else {
+							Utils::printBoxPlaceholder($i);
+						}
 					?>
-						<div class="col <?php echo $sizes[$i]; if ($i >= 1) echo ' padd-box' ?>">
-						<?php get_template_part('box', $boxes[$i]) ?>
-						</div>
-					<?php endfor; ?>
 					</div>
+				<?php endfor; ?>
 				</div>
 			</div>
 		</div>

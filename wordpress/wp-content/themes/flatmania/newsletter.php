@@ -11,9 +11,9 @@
 
 <div class="newsletter">
 	<h2><?php the_title() ?></h2>
-	<div class="newsletter-content">
-	  <div class="row">
-	    <div class="col col-md-8">
+  <div class="row">
+    <div class="col-sm-8">
+			<div class="newsletter-content">
 				<?php the_content() ?>
 				<br />
 
@@ -34,9 +34,11 @@
 					</tbody>
 					</table>
 				</div>
-
 			</div>
-	    <div class="col col-md-4 padd-left autoBox">
+
+		</div>
+    <div class="col-sm-4">
+    	<div class="newsletter-form">
 	      <div class="box box-md br-purple animated animation fadeInUp">
 	        <div class="box-content box-default slide-up">
 	          <h2>Rejestracja</h2>
@@ -57,7 +59,7 @@
 
 	        </div>
 	      </div>
-	    </div>
+    	</div>
 		</div>
 	</div>
 </div>
